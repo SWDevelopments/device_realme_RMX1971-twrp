@@ -16,6 +16,7 @@
 
 DEVICE_PATH := device/realme/RMX1971
 BUILD_BROKEN_DUP_RULES := true
+ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
 TARGET_ARCH := arm64
