@@ -17,10 +17,9 @@
 # Release name
 PRODUCT_RELEASE_NAME := RMX1971
 
-# Inherit from device
-$(call inherit-product, device/realme/RMX1971/device.mk)
+$(call inherit-product, build/target/product/aosp_base.mk)
 
-# Inherit some common TWRP stuff.
+# Inherit from twrp common
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
