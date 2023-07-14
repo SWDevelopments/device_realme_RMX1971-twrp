@@ -17,7 +17,8 @@
 # Release name
 PRODUCT_RELEASE_NAME := RMX1971
 
-$(call inherit-product, build/target/product/aosp_base.mk)
+# Inherit from common AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Inherit from twrp common
 $(call inherit-product, vendor/twrp/config/common.mk)
